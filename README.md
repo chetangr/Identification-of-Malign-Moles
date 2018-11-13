@@ -88,10 +88,7 @@ level that represent a good tradeoff between TPR and FPR.
 As mention before the idea is to generate a tool to predict the probability of a
 malign mole. To do it, I'm planning to provide the following resources:
 
-  **1. Web App:** The web app will have the possibility that a user upload a high
-quality image of an specific mole. The results will be a prediction about the
-probability that the given mole be malign in terms of percentage. The backend
-that contain the web app and model loaded will be located in Amazon Web Services.
+  **1. Web App:** (Optional if time allow it)
 
   **2. Android App:** (Optional if time allow it)
 
@@ -105,7 +102,7 @@ that contain the web app and model loaded will be located in Amazon Web Services
 | 4. Model Optimization I (Data augmentation)     | 1    | Done        | ++++ |
 | 5. Model Optimization II (Transferred learning) | 2    | Done        | ++++ |
 | 6. Model Optimization III (Fine Tuning)         | 2    | Done        | ++++ |
-| 7. Web App Development + Backend Service        | 2    | Done        | ++++ |
+| 7. Web App Development + Backend Service        | 2    | Done        | ++-- |
 | 8. Android App Development                      | 2    | Pending     | ++-- |
 | 9. Presentation preparation                     | 1    | Done        | ++++ |
 
@@ -196,17 +193,6 @@ The results obtained until now can be shown on the ROC curve presented below:
   ![](images/CNN_Architecture.png?raw=true)
 
   All the layers have a Relu activation function, except the last one that is sigmoid, to obtain the probability of a Malignant mole.
-
-
-#### 6.2 webApp
-
-  In order to kae in consideration the user of different platforms, I also create a web App that can be accessed on:
-   http://skinmolesrisk.ddns.net:7000
-  This app is responsive so can be used directly from any mobile phone or web browser.
-
-  ![](images/webApp1.png?raw=true)
-
-  ![](images/webApp2.png?raw=true)
 
 ### 7. Next Steps
 
