@@ -93,11 +93,7 @@ quality image of an specific mole. The results will be a prediction about the
 probability that the given mole be malign in terms of percentage. The backend
 that contain the web app and model loaded will be located in Amazon Web Services.
 
-  **2. Iphone App:** Our CNN model will be loaded into the iPhone to make local predictions.
-Advantages: The image data don't need to be uploaded to any server, because the
-model predictions can be done through the pre-trained model loaded into the iPhone.
-
-  **3. Android App:** (Optional if time allow it)
+  **2. Android App:** (Optional if time allow it)
 
 ### 4. Project Schedule
 
@@ -110,9 +106,8 @@ model predictions can be done through the pre-trained model loaded into the iPho
 | 5. Model Optimization II (Transferred learning) | 2    | Done        | ++++ |
 | 6. Model Optimization III (Fine Tuning)         | 2    | Done        | ++++ |
 | 7. Web App Development + Backend Service        | 2    | Done        | ++++ |
-| 8. Ios App Development                          | 2    | Done        | ++++ |
-| 9. Android App Development                      | 2    | Pending     | ++-- |
-| 10. Presentation preparation                    | 1    | Done        | ++++ |
+| 8. Android App Development                      | 2    | Pending     | ++-- |
+| 9. Presentation preparation                     | 1    | Done        | ++++ |
 
 ### 5. Tools to Use
  - Tensorflow (GPU High performance computing - NVIDIA)
@@ -202,20 +197,8 @@ The results obtained until now can be shown on the ROC curve presented below:
 
   All the layers have a Relu activation function, except the last one that is sigmoid, to obtain the probability of a Malignant mole.
 
-#### 6.2 iOS App
- As part of this personal project I have developed an iOS app using the coreML libraries released by apple. The advantage to use this libraries is that the model and the image are stored locally on the phone, and internet connection is not needed. The keras model trained before is converted into coreML model and loaded into the phone to make the predictions. Below is a picture of the app and two examples of results.
 
-  ![](images/iosApp1.png?raw=true)
-
-  - Example of low risk mole result:
-
-  ![](images/iosApp2.jpg?raw=true)
-
-  - Example of High risk mole result:
-
-  ![](images/iosApp3.jpg?raw=true)
-
-#### 6.3 webApp
+#### 6.2 webApp
 
   In order to kae in consideration the user of different platforms, I also create a web App that can be accessed on:
    http://skinmolesrisk.ddns.net:7000
